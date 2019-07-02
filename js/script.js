@@ -20,7 +20,7 @@ let quotes = [
     quote: 'To infinity and beyond!',
     citation: 'Toy Story',
     source: 'Buzz Lightyear',
-    performer: 'Tim Allen',
+    actor: 'Tim Allen',
     year: 1995,
     director: 'John Lasseter'
   },
@@ -28,23 +28,21 @@ let quotes = [
     quote: 'What\'s in the box!',
     citation: 'Seven',
     source: 'Detective David Mills',
-    performer: 'Brad Pitt',
+    actor: 'Brad Pitt',
     year: 1995,
     director: 'David Fincher'
   },
   {
     quote: 'Soylent Green is people!',
-    citation: 'Soylent Green',
     source: 'Detective Robert Thorn',
-    performer: 'Charlton Heston',
-    year: 1973,
+    actor: 'Charlton Heston',
     director: 'Richard Fleischer'
   },
   {
     quote: 'I see dead people.',
     citation: 'The Sixth Sense',
     source: 'Cole Sear',
-    performer: 'Haley Joel Osment',
+    actor: 'Haley Joel Osment',
     year: 1999,
     director: 'M. Night Shyamalan'
   },
@@ -52,7 +50,7 @@ let quotes = [
     quote: 'Here\'s looking at you, kid.',
     citation: 'Casablanca',
     source: 'Rick Blaine',
-    performer: 'Humphrey Bogart',
+    actor: 'Humphrey Bogart',
     year: 1942,
     director: 'Michael CUrtiz'
   },
@@ -60,7 +58,7 @@ let quotes = [
     quote: 'Just keep swimming.',
     citation: 'Finding Nemo',
     source: 'Dory',
-    performer: 'Ellen Degeneres',
+    actor: 'Ellen Degeneres',
     year: 2003,
     director: 'Andrew Stanton'
   },
@@ -68,15 +66,14 @@ let quotes = [
     quote: 'You don\'t understand! I coulda had class. I coulda been a contender. I could\'ve been somebody, instead of a bum, which is what I am.',
     citation: 'On the Waterfront',
     source: 'Terry Malloy',
-    performer: 'Marlon Brando',
-    year: 1954,
+    actor: 'Marlon Brando',
     director: 'Elia Kazan'
   },
   {
     quote: 'What we\'ve got here is failure to communicate.',
     citation: 'Cool Hand Luke',
     source: 'Captain',
-    performer: 'Strother Martin',
+    actor: 'Strother Martin',
     year: 1967,
     director: 'Stuart Rosenberg'
   },
@@ -84,7 +81,7 @@ let quotes = [
     quote: 'You talkin\' to me?',
     citation: 'Taxi Driver',
     source: 'Travis Bickle',
-    performer: 'Robert De Niro',
+    actor: 'Robert De Niro',
     year: 1976,
     director: 'Martin Scorsese'
   },
@@ -92,7 +89,7 @@ let quotes = [
     quote: 'E.T. phone home.',
     citation: 'E.T. the Extra-Terrestrial',
     source: 'E.T.',
-    performer: 'Pat Welsh',
+    actor: 'Pat Welsh',
     year: 1982,
     director: 'Steven Spielberg'
   },
@@ -100,7 +97,7 @@ let quotes = [
     quote: 'The truth is... I am Iron Man.',
     citation: 'Iron Man',
     source: 'Tony Stark',
-    performer: 'Robert Downey Jr.',
+    actor: 'Robert Downey Jr.',
     year: 2008,
     director: 'Jon Favreau'
   },
@@ -108,7 +105,7 @@ let quotes = [
     quote: 'You can\'t handle the truth!',
     citation: 'A Few Good Men',
     source: 'Col. Nathan R Jessup',
-    performer: 'Jack Nicholson',
+    actor: 'Jack Nicholson',
     year: 1992,
     director: 'Rob Reiner'
   },
@@ -116,7 +113,7 @@ let quotes = [
     quote: 'I\'ll have what she\'s having.',
     citation: 'When Harry Met Sally...',
     source: 'Customer',
-    performer: 'Estelle Reiner',
+    actor: 'Estelle Reiner',
     year: 1989,
     director: 'Rob Reiner'
   },
@@ -124,7 +121,7 @@ let quotes = [
     quote: 'My precious.',
     citation: 'The Lord of the Rings: The Two Towers',
     source: 'Gollum',
-    performer: 'Andy Serkis',
+    actor: 'Andy Serkis',
     year: 2002,
     director: 'Peter Jackson'
   },
@@ -132,15 +129,15 @@ let quotes = [
     quote: 'I have always depended on the kindness of strangers.',
     citation: 'A Streetcar Named Desire',
     source: 'Blanche DuBois',
-    performer: 'Vivien Leigh',
+    actor: 'Vivien Leigh',
     year: 1951,
     director: 'Elia Kazan'
   },
   {
     quote: 'Gentlemen, you can\'t fight in here! This is the War Room!',
-    citation: 'Dr. Strangelove',
+    citation: 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb',
     source: 'President Merkin Muffley',
-    performer: 'Peter Sellers',
+    actor: 'Peter Sellers',
     year: 1964,
     director: 'Stanley Kubrick'
   },
@@ -148,7 +145,7 @@ let quotes = [
     quote: 'Greed, for lack of a better word, is good.',
     citation: 'Wall Street',
     source: 'Gordon Gekko',
-    performer: 'Michael Douglas',
+    actor: 'Michael Douglas',
     year: 1987,
     director: 'Oliver Stone'
   },
@@ -156,7 +153,7 @@ let quotes = [
     quote: 'I\'m also just a girl, standing in front of a boy, asking him to love her.',
     citation: 'Notting Hill',
     source: 'Anna Scott',
-    performer: 'Julia Roberts',
+    actor: 'Julia Roberts',
     year: 1999,
     director: 'Roger Michell'
   },
@@ -164,7 +161,7 @@ let quotes = [
     quote: 'You had me at hello.',
     citation: 'Jerry Maguire',
     source: 'Dorothy Boyd',
-    performer: 'Ren&eacute;e Zellweger',
+    actor: 'Ren&eacute;e Zellweger',
     year: 1996,
     director: 'Cameron Crowe'
   },
@@ -229,7 +226,6 @@ let quotes = [
     citation: 'My Best Friend\'s Wedding',
     source: 'Micahel O\'Neal',
     actor: 'Dermot Mulroney',
-    year: 1997,
     director: 'P.J. Hogan'
   },
   {
@@ -274,7 +270,6 @@ let quotes = [
   },
   {
     quote: 'Life moves pretty fast. If you don\'t stop and look around once in a while, you could miss it.',
-    citation: 'Ferris Bueller\'s Day Off',
     source: 'Ferris Bueller',
     actor: 'Matthew Broderick',
     year: 1986,
@@ -306,8 +301,8 @@ let quotes = [
   },
   {
     quote: 'The way it works is, you do the thing you\'re scared shitless of, and you get the courage after you do it, not before you do it.',
-    citation: 'Archie Gates',
-    source: 'Three Kings',
+    citation: 'Three Kings',
+    source: 'Archie Gates',
     actor: 'George Clooney',
     year: 1999,
     director: 'David O. Russell'
@@ -370,7 +365,6 @@ let quotes = [
   },
   {
     quote: 'A laugh can be a very powerful thing. Why, sometimes in life, it\'s the only weapon we have.',
-    citation: 'Who Framed Roger Rabbit?',
     source: 'Roger Rabbit',
     actor: 'Charles Fleischer',
     year: 1988,
@@ -549,15 +543,12 @@ let quotes = [
     citation: 'Jaws',
     source: 'Martin Brody',
     actor: 'Roy Scheider',
-    year: 1975,
     director: 'Steven Spielberg'
   },
   {
     quote: 'I\'ll be back.',
-    citation: 'The Terminator',
     source: 'The Terminator',
     actor: 'Arnold Schwarzenegger',
-    year: 1984,
     director: 'James Cameron'
   },
   {
@@ -565,7 +556,6 @@ let quotes = [
     citation: 'Field of Dreams',
     source: 'Shoeless Joe Jackson',
     actor: 'Ray Liotta',
-    year: 1989,
     director: 'Phil Alden Robinson'
   },
   {
@@ -602,7 +592,6 @@ let quotes = [
   },
   {
     quote: 'Forget it, Jake, it\'s Chinatown.',
-    citation: 'Chinatown',
     source: 'Lawrence Walsh',
     actor: 'Joe Mantell',
     year: 1974,
@@ -618,15 +607,25 @@ let quotes = [
   },
 ];
 
+let quotesCopy = [];
+
+console.log(quotes);
 
 /***
   Create the `getRandomQuote` function to:
    - Create a variable to store a random number 
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
-function getRandomQuote (quote_list)  {
+function getRandomQuote ()  {
+  if  (quotes.length === 0) {
+    quotes = quotesCopy.slice();
+    quotesCopy.splice(0, quotesCopy.length);
+  }
   let randomNum = Math.floor(Math.random() * quotes.length);
-  return quote_list[randomNum];
+  let randQuote = quotes[randomNum];
+  quotesCopy.push(randQuote);
+  quotes.splice(randomNum, 1);
+  return randQuote;
 }
 
 
@@ -644,9 +643,23 @@ function getRandomQuote (quote_list)  {
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
-function print (id) {
-  let element = document.getElementById(id);
-  element.innerHTML = '"' + getRandomQuote(quotes).quote + '"';
+function printQuote () {
+  let currentQuote = getRandomQuote();
+  let HTML_string = '';
+  HTML_string += '<p class="quote">' + currentQuote.quote + '</p>';
+  if  (currentQuote.citation === undefined && currentQuote.year === undefined) {
+    HTML_string += '<p class="source">' + currentQuote.actor + ' as ' + currentQuote.source + '</p>';
+  } else if (currentQuote.citation === undefined && currentQuote.year !== undefined) {
+      HTML_string += '<p class="source">' + currentQuote.actor + ' as ' + currentQuote.source + '<span class="year">'+ currentQuote.year + '</span></p>';
+  } else if (currentQuote.citation !== undefined && currentQuote.year === undefined)  {
+      HTML_string += '<p class="source">' + currentQuote.actor + ' as ' + currentQuote.source + '<span class="citation"> ' + currentQuote.citation;
+      HTML_string += ", dir. " + currentQuote.director + '</span></p>';
+  } else  {
+      HTML_string += '<p class="source">' + currentQuote.actor + ' as ' + currentQuote.source + '<span class="citation">';
+      HTML_string +=  currentQuote.citation + ", dir. " + currentQuote.director + '</span><span class="year">'+ currentQuote.year + '</span></p>';
+  }
+  let element = document.getElementById("quote-box");
+  element.innerHTML = HTML_string;
 }
 
 
