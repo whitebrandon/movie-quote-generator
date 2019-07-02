@@ -52,7 +52,7 @@ let quotes = [
     source: 'Rick Blaine',
     actor: 'Humphrey Bogart',
     year: 1942,
-    director: 'Michael CUrtiz'
+    director: 'Michael Curtiz'
   },
   {
     quote: 'Just keep swimming.',
@@ -607,17 +607,18 @@ let quotes = [
   },
 ];
 
-let quotesCopy = [];
+let quotesCopy = []; // A variable to hold the quotes objects 
+                     // that have already been printed to quote-box div
 
-console.log(quotes);
+/* getRandomQuote func gets a random number between 0 and the length of the quotes array 
+and uses box notation to select a quote | Because I don't want a single quote to be used 
+multiple times before the array is cycled through completely, I decided to push each 
+random quote object selected into a new array named quotesCopy and then removing that 
+same quotes object from the quotes array */
 
-/***
-  Create the `getRandomQuote` function to:
-   - Create a variable to store a random number 
-   - Cse the random number to `return` a random quote object from the `quotes` array.
-***/
 function getRandomQuote ()  {
-  if  (quotes.length === 0) {
+  if  (quotes.length === 0) {               // If the quotes array is empty, 
+                                            // copy the quotesCopy array into it
     quotes = quotesCopy.slice();
     quotesCopy.splice(0, quotesCopy.length);
   }
@@ -628,49 +629,53 @@ function getRandomQuote ()  {
   return randQuote;
 }
 
+/* getRandomColor func gets three random numbers b/w 1 and 255 and sets them as 
+the values of the 3 rgb colors (creating newColor). It then changes the 
+background color of the page and the "show another quote" button to that color */
 
+function getRandomColor ()  {
+  let r = Math.floor(Math.random() * 255) +1;
+  let g = Math.floor(Math.random() * 255) +1;
+  let b = Math.floor(Math.random() * 255) +1;
+  let newColor = 'rgb('+ r +',' + g + ',' + b + ')';
+  document.querySelector("body").style.backgroundColor = newColor;
+  document.getElementById("loadQuote").style.backgroundColor = newColor;
+}
 
-/***
-  Create the `printQuote` function to: 
-   - Call the `getRandomQuote` function and assign it to a variable.
-   - Create a variable for the HTML string and set it equal to an empty string.
-   - Use the HTML template in the instructions or the markup in the index.html file, AND 
-     the random quote vairable to build your HTML string.
-   - Add the quote and source section to the HTML string.
-   - Use an if statement to check for the citation property before adding it to the HTML string.
-   - Use an if statement to check for the year property before adding it to the HTML string.
-   - Don't forget to close that final `p` tag.
-   - Set the `innerHTML` of the `quote-box` div to the HTML string. 
-***/
+/* printQuote fun calls both the getRandomQuote and getRandomColor funcs, 
+it verifies that a citation (movie title) and/or year (release year) are present 
+within the selected quotes object and then prints the quote and accompanying 
+data into the quote-box div */
 
 function printQuote () {
   let currentQuote = getRandomQuote();
+  getRandomColor(); // This is the line that changes the background color
   let HTML_string = '';
   HTML_string += '<p class="quote">' + currentQuote.quote + '</p>';
-  if  (currentQuote.citation === undefined && currentQuote.year === undefined) {
+  if  (currentQuote.citation === undefined && currentQuote.year === undefined) { // If both the movie title and release year are undefined
     HTML_string += '<p class="source">' + currentQuote.actor + ' as ' + currentQuote.source + '</p>';
-  } else if (currentQuote.citation === undefined && currentQuote.year !== undefined) {
+  } else if (currentQuote.citation === undefined && currentQuote.year !== undefined) { // If the movie title is undefined but the release year isn't
       HTML_string += '<p class="source">' + currentQuote.actor + ' as ' + currentQuote.source + '<span class="year">'+ currentQuote.year + '</span></p>';
-  } else if (currentQuote.citation !== undefined && currentQuote.year === undefined)  {
+  } else if (currentQuote.citation !== undefined && currentQuote.year === undefined)  { // If the release year is undefined but the movie title isn't
       HTML_string += '<p class="source">' + currentQuote.actor + ' as ' + currentQuote.source + '<span class="citation"> ' + currentQuote.citation;
       HTML_string += ", dir. " + currentQuote.director + '</span></p>';
   } else  {
       HTML_string += '<p class="source">' + currentQuote.actor + ' as ' + currentQuote.source + '<span class="citation">';
       HTML_string +=  currentQuote.citation + ", dir. " + currentQuote.director + '</span><span class="year">'+ currentQuote.year + '</span></p>';
   }
-  let element = document.getElementById("quote-box");
+  let element = document.getElementById("quote-box"); // Sets the div element with an id of quote-box to the value of element
   element.innerHTML = HTML_string;
 }
+/* Reset quoteTimer so that printQuote func cannot be auto called 
+immediately after "Show Another Quote" button is clicked */
 
+function resetTimer () {
+  clearInterval(quoteTimer);
+  quoteTimer = setInterval(printQuote, 20000);
+}
 
-/***
-  When the "Show another quote" button is clicked, the event listener 
-  below will be triggered, and it will call, or "invoke", the `printQuote` 
-  function. So do not make any changes to the line of code below this 
-  comment.
-***/
+let quoteTimer = setInterval(printQuote, 20000); // Sets a timer so quote auto changes every 20 secs
+document.addEventListener('DOMContentLoaded', printQuote, false); // Prints quote ASAP after page downloads
+document.getElementById('loadQuote').addEventListener("click", printQuote, false); // When button is clicked, a new quote is printed
+document.getElementById('loadQuote').addEventListener("click", resetTimer, false); // Reset quoteTimer on click
 
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
