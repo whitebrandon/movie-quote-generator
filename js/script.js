@@ -16,22 +16,12 @@ project 1 - A Random Quote Generator
 ***/
 
 let quotes = [
-  {
-    quote: 'You are a toy!',
-    citation: 'Toy Story',
-    source: 'Woody',
-    performer: 'Tom Hanks',
-    year: 1995,
-    distribution: 'Disney/Pixar',
-    director: 'John Lasseter'
-  },
     {
     quote: 'To infinity and beyond!',
     citation: 'Toy Story',
     source: 'Buzz Lightyear',
     performer: 'Tim Allen',
     year: 1995,
-    distribution: 'Disney/Pixar',
     director: 'John Lasseter'
   },
   {
@@ -40,17 +30,7 @@ let quotes = [
     source: 'Detective David Mills',
     performer: 'Brad Pitt',
     year: 1995,
-    distribution: 'New Line Cinema',
     director: 'David Fincher'
-  },
-  {
-    quote: 'I\'m a smudge of excrement on a tissue surging out to sea with a million tons of raw sewage.',
-    citation: 'Sideways',
-    source: 'Jack Cole',
-    performer: 'Thomas Haden Church',
-    year: 2004,
-    distribution: 'Fox Searchlight Pictures',
-    director: 'Alexander Payne'
   },
   {
     quote: 'Soylent Green is people!',
@@ -58,7 +38,6 @@ let quotes = [
     source: 'Detective Robert Thorn',
     performer: 'Charlton Heston',
     year: 1973,
-    distribution: 'Metro-Goldwyn-Mayer',
     director: 'Richard Fleischer'
   },
   {
@@ -67,26 +46,15 @@ let quotes = [
     source: 'Cole Sear',
     performer: 'Haley Joel Osment',
     year: 1999,
-    distribution: 'Buena Vista Pictures',
     director: 'M. Night Shyamalan'
   },
   {
-    quote: 'Louis, I think this is the beginning of a beautiful friendship.',
+    quote: 'Here\'s looking at you, kid.',
     citation: 'Casablanca',
     source: 'Rick Blaine',
     performer: 'Humphrey Bogart',
     year: 1942,
-    distribution: 'Warner Bros. Pictures',
     director: 'Michael CUrtiz'
-  },
-  {
-    quote: 'Sometimes there just ain\'t enough rocks',
-    citation: 'Forrest Gump',
-    source: 'Forrest Gump',
-    performer: 'Tom Hanks',
-    year: 1994,
-    distribution: 'Paramount Pictures',
-    director: 'Robert Zemeckis'
   },
   {
     quote: 'Just keep swimming.',
@@ -94,7 +62,6 @@ let quotes = [
     source: 'Dory',
     performer: 'Ellen Degeneres',
     year: 2003,
-    distribution: 'Disney/Pixar',
     director: 'Andrew Stanton'
   },
   {
@@ -103,7 +70,6 @@ let quotes = [
     source: 'Terry Malloy',
     performer: 'Marlon Brando',
     year: 1954,
-    distribution: 'Columbia Pictures Corporation',
     director: 'Elia Kazan'
   },
   {
@@ -112,7 +78,6 @@ let quotes = [
     source: 'Captain',
     performer: 'Strother Martin',
     year: 1967,
-    distribution: 'Warner Bros.-Seven Arts',
     director: 'Stuart Rosenberg'
   },
   {
@@ -121,7 +86,6 @@ let quotes = [
     source: 'Travis Bickle',
     performer: 'Robert De Niro',
     year: 1976,
-    distribution: 'Columbia Pictures',
     director: 'Martin Scorsese'
   },
   {
@@ -130,7 +94,6 @@ let quotes = [
     source: 'E.T.',
     performer: 'Pat Welsh',
     year: 1982,
-    distribution: 'Universal Pictures',
     director: 'Steven Spielberg'
   },
   {
@@ -139,7 +102,6 @@ let quotes = [
     source: 'Tony Stark',
     performer: 'Robert Downey Jr.',
     year: 2008,
-    distribution: 'Paramount Pictures',
     director: 'Jon Favreau'
   },
   {
@@ -148,7 +110,6 @@ let quotes = [
     source: 'Col. Nathan R Jessup',
     performer: 'Jack Nicholson',
     year: 1992,
-    distribution: 'Columbia Pictures',
     director: 'Rob Reiner'
   },
   {
@@ -157,7 +118,6 @@ let quotes = [
     source: 'Customer',
     performer: 'Estelle Reiner',
     year: 1989,
-    distribution: 'Columbia Pictures',
     director: 'Rob Reiner'
   },
   {
@@ -166,7 +126,6 @@ let quotes = [
     source: 'Gollum',
     performer: 'Andy Serkis',
     year: 2002,
-    distribution: 'New Line Cinema',
     director: 'Peter Jackson'
   },
   {
@@ -175,7 +134,6 @@ let quotes = [
     source: 'Blanche DuBois',
     performer: 'Vivien Leigh',
     year: 1951,
-    distribution: 'Warner Bros.',
     director: 'Elia Kazan'
   },
   {
@@ -184,17 +142,7 @@ let quotes = [
     source: 'President Merkin Muffley',
     performer: 'Peter Sellers',
     year: 1964,
-    distribution: 'Columbia Pictures',
     director: 'Stanley Kubrick'
-  },
-  {
-    quote: 'Mrs. Robinson, you\'re trying to seduce me. Aren\'t you?',
-    citation: 'The Graduate',
-    source: 'Benjamin Braddock',
-    performer: 'Dustin Hoffman',
-    year: 1967,
-    distribution: 'Embassy Pictures',
-    director: 'Mike Nichols'
   },
   {
     quote: 'Greed, for lack of a better word, is good.',
@@ -202,7 +150,6 @@ let quotes = [
     source: 'Gordon Gekko',
     performer: 'Michael Douglas',
     year: 1987,
-    distribution: '20th Century Fox',
     director: 'Oliver Stone'
   },
   {
@@ -211,7 +158,6 @@ let quotes = [
     source: 'Anna Scott',
     performer: 'Julia Roberts',
     year: 1999,
-    distribution: 'Universal Pictures',
     director: 'Roger Michell'
   },
   {
@@ -220,8 +166,455 @@ let quotes = [
     source: 'Dorothy Boyd',
     performer: 'Ren&eacute;e Zellweger',
     year: 1996,
-    distribution: 'TriStar Pictures',
     director: 'Cameron Crowe'
+  },
+  {
+    quote: 'I know who I am. I\'m the dude playing a dude disguised as another dude!',
+    citation: 'Tropic Thunder',
+    source: 'Kirk Lazarus',
+    actor: 'Robert Downey Jr',
+    year: 2008,
+    director: 'Ben Stiller'
+  },
+  {
+    quote: 'Exercise gives you endorphins. Endorphins make you happy. Happy people just don\'t shoot their husbands. They just don\'t.',
+    citation: 'Legally Blonde',
+    source: 'Elle Woods',
+    actor: 'Reese Witherspoon',
+    year: 2001,
+    director: 'Robert Luketic'
+  },
+  {
+    quote: 'You either die a hero, or live long enough to see yourself become the villain.',
+    citation: 'The Dark Knight',
+    source: 'Harvey Dent',
+    actor: 'Aaron Eckhart',
+    year: 2008,
+    director: 'Christopher Nolan'
+  },
+  {
+    quote: 'What\'s the most you ever lost on a coin toss?',
+    citation: 'No Country for Old Men',
+    source: 'Anton Chigurh',
+    actor: 'Javier Bardem',
+    year: 2007,
+    director: 'Coen Brothers'
+  },
+  {
+    quote: 'Are you not entertained?',
+    citation: 'Gladiator',
+    source: 'Maximus Decimus Meridius',
+    actor: 'Russell Crowe',
+    year: 2000,
+    director: 'Ridley Scott'
+  },
+  {
+    quote: 'Girl, you can\'t get no infection in your booty hole. It\'s a booty hole!',
+    citation: 'Girls Trip',
+    source: 'Dina',
+    actor: 'Tiffany Haddish',
+    year: 2017,
+    director: 'Malcolm D. Lee'
+  },
+  {
+    quote: 'I wish I knew how to quit you',
+    citation: 'Brokeback Mountain',
+    source: 'Jack Twist',
+    actor: 'Jake Gyllenhaal',
+    year: 2005,
+    director: 'Ang Lee'
+  },
+  {
+    quote: 'If you love someone...you say it, right then, out loud. Otherwise, the moment just passes you by.',
+    citation: 'My Best Friend\'s Wedding',
+    source: 'Micahel O\'Neal',
+    actor: 'Dermot Mulroney',
+    year: 1997,
+    director: 'P.J. Hogan'
+  },
+  {
+    quote: 'Sink. Now, you\'re in the sunken place.',
+    citation: 'Get Out',
+    source: 'Missy Armitage',
+    actor: 'Catherine Keener',
+    year: 2017,
+    director: 'Jordan Peele'
+  },
+  {
+    quote: 'If you can dodge a wrench, you can dodge a ball.',
+    citation: 'Dodgeball: A True Underdog Story',
+    source: 'Patches O\'Houlihan',
+    actor: 'Rip Torn',
+    year: 2004,
+    director: 'Rawson Marshall Thurber'
+  },
+  {
+    quote: 'Do, or Do not. There is no try.',
+    citation: 'Star Wars: The Empire Strikes Back',
+    source: 'Yoda',
+    actor: 'Frank Oz',
+    year: 1980,
+    director: 'Irvin Kershner'
+  },
+  {
+    quote: 'Every man dies, but not every man really lives.',
+    citation: 'Braveheart',
+    source: 'William Wallace',
+    actor: 'Mel Gibson',
+    year: 1995,
+    director: 'Mel Gibson'
+  },
+  {
+    quote: 'Life isn\'t the amount of breaths you take. It\'s the moments that take your breath away.',
+    citation: 'Hitch',
+    source: 'Alex Hitchens',
+    actor: 'Will Smith',
+    year: 2005,
+    director: 'Andy Tennant'
+  },
+  {
+    quote: 'Life moves pretty fast. If you don\'t stop and look around once in a while, you could miss it.',
+    citation: 'Ferris Bueller\'s Day Off',
+    source: 'Ferris Bueller',
+    actor: 'Matthew Broderick',
+    year: 1986,
+    director: 'John Hughes'
+  },
+  {
+    quote: 'Strange, isn\'t it? Each man\'s life touches so many other lives. When he isn\'t around he leaves an awful hole, doesn\'t he?',
+    citation: 'It\'s a Wonderful Life',
+    source: 'Clarence Odbody',
+    actor: 'Henry Travers',
+    year: 1946,
+    director: 'Frank Capra'
+  },
+  {
+    quote: 'Sometimes, it\'s the very people who no one imagines anything of, who do the things that no one can imagine.',
+    citation: 'The Imitation Game',
+    source: 'Alan Turing',
+    actor: 'Benedict Cumberbatch',
+    year: 2014,
+    director: 'Morten Tyldum'
+  },
+  {
+    quote: 'Our lives are defined by opportunities, even the ones we miss.',
+    citation: 'The Curious Case of Benjamin Button',
+    source: 'Benjamin Button',
+    actor: 'Brad Pitt',
+    year: 2008,
+    director: 'David Fincher'
+  },
+  {
+    quote: 'The way it works is, you do the thing you\'re scared shitless of, and you get the courage after you do it, not before you do it.',
+    citation: 'Archie Gates',
+    source: 'Three Kings',
+    actor: 'George Clooney',
+    year: 1999,
+    director: 'David O. Russell'
+  },
+  {
+    quote: 'No matter what anybody tells you, words and ideas can change the world.',
+    citation: 'Dead Poets Society',
+    source: 'John Keating',
+    actor: 'Robin Williams',
+    year: 1989,
+    director: 'Peter Weir'
+  },
+  {
+    quote: 'Why do we fall, Sir? So that we can learn to pick ourselves up.',
+    citation: 'Batman Begins',
+    source: 'Alfred Pennyworth',
+    actor: 'Michael Caine',
+    year: 2005,
+    director: 'Christopher Nolan'
+  },
+  {
+    quote: 'Oh yes, the past can hurt. But, you can either run from it, or learn from it.',
+    citation: 'The Lion King',
+    source: 'Rafiki',
+    actor: 'Robert Guillaume',
+    year: 1994,
+    director: 'Roger Allers and Rob Minkoff'
+  },
+  {
+    quote: 'Hope is a good thing, maybe the best of things, and no good thing ever dies.',
+    citation: 'The Shawshank Redemption',
+    source: 'Andy Dufresne',
+    actor: 'Tim Robbins',
+    year: 1994,
+    director: 'Frank Darabont'
+  },
+  {
+    quote: 'It is not our abilities that show what we truly are. It is our choices.',
+    citation: 'Harry Potter and the Philosopher\'s Stone',
+    source: 'Albus Dumbeldore',
+    actor: 'Richard Harris',
+    year: 2001,
+    director: 'Chris Columbus'
+  },
+  {
+    quote: 'Great men are not born great, they grow great.',
+    citation: 'The Godfather',
+    source: 'Don Vito Corleone',
+    actor: 'Martin Brando',
+    year: 1972,
+    director: 'Francis Ford Coppola'
+  },
+  {
+    quote: 'We walk away from our dreams afraid we may fail, or worse yet, afraid we may succeed.',
+    citation: 'Finding Forrester',
+    source: 'William Forrester',
+    actor: 'Sean Connery',
+    year: 2000,
+    director: 'Gus Van Sant'
+  },
+  {
+    quote: 'A laugh can be a very powerful thing. Why, sometimes in life, it\'s the only weapon we have.',
+    citation: 'Who Framed Roger Rabbit?',
+    source: 'Roger Rabbit',
+    actor: 'Charles Fleischer',
+    year: 1988,
+    director: 'Robert Zemeckis'
+  },
+  {
+    quote: 'Get busy living or get busy dying.',
+    citation: 'The Shawshank Redemption',
+    source: 'Andy Dufresne',
+    actor: 'Tim Robbins',
+    year: 1994,
+    director: 'Frank Darabont'
+  },
+  {
+    quote: 'The best love is the kind that awakens the soul and makes us reach for more...',
+    citation: 'The Notebook',
+    source: 'Noah Calhoun',
+    actor: 'Ryan Gosling',
+    year: 2004,
+    director: 'Nick Cassavetes'
+  },
+  {
+    quote: 'They say when you meet the love of your life, time stops. And that\'s true.',
+    citation: 'Big Fish',
+    source: 'Edward Bloom',
+    actor: 'Albert Finney',
+    year: 2003,
+    director: 'Tim Burton'
+  },
+  {
+    quote: 'The past is just a story we tell ourselves.',
+    citation: 'Her',
+    source: 'Samantha',
+    actor: 'Scarlett Johansson',
+    year: 2013,
+    director: 'Spike Jonze'
+  },
+  {
+    quote: 'The right person is still going to think the sun shines out your ass.',
+    citation: 'Juno',
+    source: 'Mac MacGuff',
+    actor: 'J. K. Simmons',
+    year: 2007,
+    director: 'Jason Reitman'
+  },
+  {
+    quote: 'It\'s hard to stay mad when there\'s so much beauty in the world.',
+    citation: 'American Beauty',
+    source: 'Lester Burnham',
+    actor: 'Kevin Spacey',
+    year: 1999,
+    director: 'Sam Mendes'
+  },
+  {
+    quote: 'Run, Forrest, run!',
+    citation: 'Forrest Gump',
+    source: 'Jenny Curran',
+    actor: 'Robin Wright',
+    year: 1994,
+    director: 'Robert Zemeckis'
+  },
+  {
+    quote: 'I know what I have to do now, I\'ve got to keep breathing because tomorrow the sun will rise. Who knows what the tide could bring?',
+    citation: 'Cast Away',
+    source: 'Chuck Noland',
+    actor: 'Tom Hanks',
+    year: 2000,
+    director: 'Robert Zemeckis'
+  },
+  {
+    quote: 'To find something, anything, a great truth or a lost pair of glasses, you must first believe there will be some advantage in finding it.',
+    citation: 'All the King\'s Men',
+    source: 'Jack Burden',
+    actor: 'Jude Law',
+    year: 2006,
+    director: 'Steve Zaillian'
+  },
+  {
+    quote: 'Sometimes you got to have a little dirt on you for anybody to trust you.',
+    citation: 'Training Day',
+    source: 'Alonzo Harris',
+    actor: 'Denzel Washington',
+    year: 2001,
+    director: 'Antoine Fuqua'
+  },
+  {
+    quote: 'With great power comes great responsibility.',
+    citation: 'Spider-Man',
+    source: 'Ben Parker',
+    actor: 'Cliff Robertson',
+    year: 2002,
+    director: 'Sam Raimi'
+  },
+  {
+    quote: 'I drink your milkshake. I drink it up.',
+    citation: 'There Will Be Blood',
+    source: 'Daniel Plainview',
+    actor: 'Daniel Day-Lewis',
+    year: 2007,
+    director: 'Paul Thomas Anderson'
+  },
+  {
+    quote: 'It\'s like how much more black could this be? And the answer is none. None more black.',
+    citation: 'This is Spinal Tap',
+    source: 'Nigel Tufnel',
+    actor: 'Christopher Guest',
+    year: 1984,
+    director: 'Rob Reiner'
+  },
+  {
+    quote: 'You mustn\'t be afraid to dream a little bigger, darling.',
+    citation: 'Inception',
+    source: 'Eames',
+    actor: 'Tom Hardy',
+    year: 2010,
+    director: 'Christopher Nolan'
+  },
+  {
+    quote: 'Frying chicken just tend to make you feel better about life.',
+    citation: 'The Help',
+    source: 'Minny Jackson',
+    actor: 'Octavia Spencer',
+    year: 2011,
+    director: 'Tate Taylor'
+  },
+  {
+    quote: 'After all, tomorrow is another day.',
+    citation: 'Gone with the Wind',
+    source: 'Scarlett O\'Hara',
+    actor: 'Vivien Leigh',
+    year: 1939,
+    director: 'Victor Fleming'
+  },
+  {
+    quote: 'There\'s no place like home.',
+    citation: 'The Wizard of Oz',
+    source: 'Dorothy Gale',
+    actor: 'Judy Garland',
+    year: 1939,
+    director: 'Victor Fleming'
+  },
+  {
+    quote: 'You talkin\' to me?',
+    citation: 'Taxi Driver',
+    source: 'Travis Bickle',
+    actor: 'Robert De Niro',
+    year: 1976,
+    director: 'Martin Scorsese'
+  },
+  {
+    quote: 'Love means never having to say you\'re sorry.',
+    citation: 'Love Story',
+    source: 'Oliver Barrett IV',
+    actor: 'Ryan O\'Neal',
+    year: 1970,
+    director: 'Arthur Hiller'
+  },
+  {
+    quote: 'I\'m mad as hell, and I\'m not going to take this anymore!',
+    citation: 'Network',
+    source: 'Howard Beale',
+    actor: 'Peter Finch',
+    year: 1976,
+    director: 'Sidney Lumet'
+  },
+  {
+    quote: 'I am big! It\'s the pictures that got small.',
+    citation: 'Sunset Boulevard',
+    source: 'Norma Desmond',
+    actor: 'Gloria Swanson',
+    year: 1950,
+    director: 'Billy Wilder'
+  },
+  {
+    quote: 'You\'re gonna need a bigger boat.',
+    citation: 'Jaws',
+    source: 'Martin Brody',
+    actor: 'Roy Scheider',
+    year: 1975,
+    director: 'Steven Spielberg'
+  },
+  {
+    quote: 'I\'ll be back.',
+    citation: 'The Terminator',
+    source: 'The Terminator',
+    actor: 'Arnold Schwarzenegger',
+    year: 1984,
+    director: 'James Cameron'
+  },
+  {
+    quote: 'If you build it, he will come.',
+    citation: 'Field of Dreams',
+    source: 'Shoeless Joe Jackson',
+    actor: 'Ray Liotta',
+    year: 1989,
+    director: 'Phil Alden Robinson'
+  },
+  {
+    quote: 'A boy\'s best friend is his mother.',
+    citation: 'Psycho',
+    source: 'Norman Bates',
+    actor: 'Anthony Perkins',
+    year: 1960,
+    director: 'Alfred Hitchcock'
+  },
+  {
+    quote: 'Oh, no, it wasn\'t the airplanes. It was Beauty that killed the Beast.',
+    citation: 'King Kong',
+    source: 'Carl Denham',
+    actor: 'Robert Armstrong',
+    year: 1933,
+    director: 'Merian C. Cooper and Ernest B. Schoedsack'
+  },
+  {
+    quote: 'Life is a banquet, and most poor suckers are starving to death!',
+    citation: 'Auntie Mame',
+    source: 'Mame Dennis',
+    actor: 'Rosalind Russell',
+    year: 1958,
+    director: 'Morton DaCosta'
+  },
+  {
+    quote: 'I\'m the King of the World!',
+    citation: 'Titanic',
+    source: 'Jack Dawson',
+    actor: 'Leonardo DiCaprio',
+    year: 1997,
+    director: 'James Cameron'
+  },
+  {
+    quote: 'Forget it, Jake, it\'s Chinatown.',
+    citation: 'Chinatown',
+    source: 'Lawrence Walsh',
+    actor: 'Joe Mantell',
+    year: 1974,
+    director: 'Roman Polanski'
+  },
+  {
+    quote: 'Keep your friends close, but your enemies closer.',
+    citation: 'The Godfather Part II',
+    source: 'Michael Corleone',
+    actor: 'Al Pacino',
+    year: 1974,
+    director: 'Francis Ford Coppola'
   },
 ];
 
