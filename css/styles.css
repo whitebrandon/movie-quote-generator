@@ -4,8 +4,8 @@
  */
 
 body {
-  /* background-color: #36b55c;  */ /* I removed this to allow a dynamic selection 
-                                      for the background color using JavaScript*/
+  background-color: #36b55c;
+  transition: background-color 1s ease-out; /* Added a transition to bg color chng */
   color: white;
   font-family: 'Playfair Display', serif;
 }
@@ -52,6 +52,7 @@ body {
   line-height: 1.1;
   text-align: right;
   margin-right: 4em;
+  opacity: 0;
 }
 
 .source:before {
@@ -82,8 +83,8 @@ body {
   border-radius: 4px;
   border: 2px solid #fff;
   color: #fff;
-  /* background-color: #36b55c; */ /* I removed this to allow a dynamic selection 
-                                      for the background color using JavaScript*/
+  background-color: #36b55c;
+  transition: background-color 2s ease-in-out; /* Added a transition to bg color chng */
   padding: 15px 0;
   transition: .5s ;
 }
