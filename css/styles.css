@@ -52,8 +52,44 @@ body {
   line-height: 1.1;
   text-align: right;
   margin-right: 4em;
-  opacity: 0;
+/* ========= The code below fades the part of the HTML_string not equal to the quote ======== */
+
+ -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+ -moz-animation: fadein 2s; /* Firefox < 16 */
+ -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+     animation: fadein 2s;
 }
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 2; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 2; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 2; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 2; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 2; }
+}
+/* ============================= END OF code to fade HTML_string =============================== */
 
 .source:before {
   content: "—";
