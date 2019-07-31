@@ -1,6 +1,8 @@
 /******************************************
-Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
+Treehouse Techdegree:
+FSJS project 1 - Random Quote Generator
+Name: Brandon White
+Date of Last Modification: 30/07/2019
 ******************************************/
 
 const quotesCopy = []; // A variable to hold the quotes objects 
