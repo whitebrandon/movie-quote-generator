@@ -1,5 +1,13 @@
-// This file hold an array of seventy-five
-// different quote objects
+/******************************************
+Treehouse Techdegree:
+FSJS project 1 - Random Quote Generator
+Name: Brandon White
+Date of Last Modification: 30/07/2019
+******************************************/
+
+/* ============================================
+   ================== Quotes ==================
+   ============================================ */
 
 let quotes = [
     {
