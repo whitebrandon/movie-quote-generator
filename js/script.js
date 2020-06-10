@@ -2,7 +2,7 @@
 Treehouse Techdegree:
 FSJS project 1 - A Random Quote Generator
 Name: Brandon White
-Date of Last Modification: 07/09/2019
+Date of Last Modification: 10/06/2020
 ******************************************/
 
 'use strict';
@@ -24,12 +24,8 @@ Date of Last Modification: 07/09/2019
 
         // ↓ Returns random rgb color
         const getRandomColor = () =>  {
-            let color = "rgb(";
-            for (let i = 0; i < 3; i++) {
-                const rgb = Math.floor(Math.random() * 256).toString();
-                color += rgb + ",";
-            }
-            return color.slice(0, -1) + ")";
+            const [r, g, b] = ["red", "green", "blue"].map(() => Math.floor(Math.random() * 256));
+            return `rgb(${r},${g},${b})`;
         }
 
         // ↓ Calls getRandomQuote and getRandomColor functions
