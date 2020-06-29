@@ -12,7 +12,7 @@ Date of Last Modification: 28/06/2020
 
         // ↓ Returns random quote object from array named quotes
         const getRandomQuote = () => {
-            if  (quotes.length === 0) { // ← If the quotes array is empty: 
+            if  (!quotes.length) { // ← If the quotes array is empty: 
                 quotes = quotesCopy.slice(); // ← Copy the quotesCopy array into it
                 quotesCopy.splice(0, quotesCopy.length);
             }
@@ -32,8 +32,8 @@ Date of Last Modification: 28/06/2020
             const quote = getRandomQuote();
             let HTML_str = `<p class="quote">${quote.quote}</p>
                             <p class="source">${quote.actor} as ${quote.source}`;
-            if (quote.citation) HTML_str += `<span class="citation">${quote.citation}, dir. ${quote.director}`;
-            if (quote.year) HTML_str += `<span class="year">${quote.year}</span></p>`;
+            quote.citation && (HTML_str += `<span class="citation">${quote.citation}, dir. ${quote.director}`);
+            quote.year && (HTML_str += `<span class="year">${quote.year}</span></p>`);
             HTML_str += `</p>`;
             document.getElementById("quote-box").innerHTML = HTML_str;
             // ↓ Sets Color
