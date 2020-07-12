@@ -1,11 +1,7 @@
-# Techdegree Project 1 | A RANDOM QUOTE GENERATOR
-
-a COURSE BY TREEHOUSE
-
-JS CODE by Brandon White | white.brandonsean@gmail.com
+A RANDOM MOVIE QUOTE GENERATOR
 
 ## Objective:
-The objective of this project was to create a web app that displays random famous quotes each time a button is clicked.
+The objective of this project was to create a web app that displays random famous movie quotes each time a button is clicked.
 
 ## Summary of Results:
 * The quotes.js file holds an array named **quotes**, which contains a series of seventy-five quote _objects_.
