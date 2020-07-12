@@ -1,4 +1,4 @@
-A RANDOM MOVIE QUOTE GENERATOR
+# A RANDOM MOVIE QUOTE GENERATOR
 
 ## Objective:
 The objective of this project was to create a web app that displays random famous movie quotes each time a button is clicked.
